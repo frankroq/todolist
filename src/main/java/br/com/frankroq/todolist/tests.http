@@ -1,0 +1,40 @@
+POST http://localhost:8080/users/
+Content-Type: application/json
+
+{
+    "name":"TESTE",
+    "username":"TesteUser",
+    "password": "ASDF1234"
+}
+###
+
+POST http://localhost:8080/tasks/
+Content-Type: application/json
+Authorization: Basic VGVzdGVVc2VyOkFTREYxMjM0
+
+{
+    "title": "ESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTEESTE É UM TESTE",
+    "description": "ESTE É UM TESTE",
+    "startAt":"2024-10-13T20:13:55",
+    "endAt":"2024-10-13T20:13:55",
+    "priority": "highest"
+}
+
+###
+
+GET http://localhost:8080/tasks/
+Content-Type: application/json
+Authorization: Basic VGVzdGVVc2VyOkFTREYxMjM0
+
+###
+
+PUT http://localhost:8080/tasks/9168d375-de7a-4ee5-89b5-9ce2cf398691
+Content-Type: application/json
+Authorization: Basic VGVzdGVVc2VyOkFTREYxMjM0
+
+{
+    "title": "Teste weqwey",
+    "description": "ESTE É UM TESTE qweq"
+}
+
+###
